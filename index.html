@@ -59,7 +59,7 @@ sales_data.loc[sales_data.sample(frac=0.03).index, 'Region'] = np.nan
 sales_data.head()
 
 # Export the cleaned data to a CSV file
-cleaned_file_path = 'data/cleaned_sales_data.csv'  # Save to the 'data' folder within your project
+cleaned_file_path = 'data/cleaned_sales_data.csv'
 sales_data.to_csv(cleaned_file_path, index=False)
 
 print(f"Cleaned data saved to: {cleaned_file_path}")
